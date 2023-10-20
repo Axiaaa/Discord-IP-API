@@ -1,7 +1,7 @@
 ## README - Retrieving Information from an IP Address
 
 This project is a Discord bot that allows you to obtain information from a given IP address using the slash command "/ip." It uses the IP-API.com API to fetch information.
-It's very simple and premitive but the purpose was just to understand API request and how to use them with Discord bot.
+It's very simple and primitive but the purpose was just to understand API request and how to use them with Discord bot.
 
 ## Prerequisites
 
