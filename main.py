@@ -1,4 +1,4 @@
-import interactions, requests
+import interactions, requests, json
 
 TOKEN = "token"
 
@@ -14,11 +14,8 @@ TOKEN = "token"
 )
 async def ip(ctx : interactions.InteractionContext, ip : str) :
     responses = requests.get(f"http://ip-api.com/json/{ip}")
-    match responses.status_code: 
-        case 404 :
-            await ctx.send("Error IP not found")
-        case 200 :
-            await ctx.send(str(responses.json()))
+    isfail = True if responses.json()["status"] == "success" else False
+    await ctx.send(json.dumps(responses.json(), indent=4)) if isfail == True else await ctx.send(f"Error from the API :\n" + responses.json()["message"])
 
 bot = interactions.Client()
 bot.start(TOKEN)
