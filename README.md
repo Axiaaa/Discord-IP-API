@@ -33,5 +33,5 @@ The bot will respond with the information retrieved from the provided IP address
 
 ## A Note of Caution
 
-This bot is created for educational purposes and should be used responsibly and ethically. It is designed to demonstrate how to obtain information from IP addresses and should not be used for any malicious or harmful activities. Respect the privacy and rights of individuals and organizations when using this bot.
+This bot is created for educational purposes and should be used responsibly and ethically. It is designed to demonstrate how API can interacts with Discords bots and should not be used for any malicious or harmful activities. Respect the privacy and rights of individuals and organizations when using this bot.
 
